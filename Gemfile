@@ -62,7 +62,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "byebug", "~> 11.1"
+  gem "byebug", "~> 12.0"
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
   gem "wirble", "~> 0.1.3"
