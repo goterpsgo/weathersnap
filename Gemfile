@@ -48,7 +48,7 @@ group :development, :test do
   gem "faker", "~> 3.4"
 
   gem "rspec", "~> 3.13"
-  gem "rspec-rails", "~> 7.0"
+  gem "rspec-rails", "~> 8.0"
   gem "rubocop", "~> 1.75"
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
