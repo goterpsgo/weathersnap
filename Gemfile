@@ -39,6 +39,7 @@ gem "cancancan", "~> 3.6"
 gem "devise", "~> 4.9"
 gem "dotenv", "~> 3.1"
 gem "foreman", "~> 0.88"
+gem "exifr", "~> 1.4"
 
 group :development, :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
