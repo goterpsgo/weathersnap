@@ -428,7 +428,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (>= 1.4)
   stimulus-rails
-  turbo-rails
+  turbo-rails (~> 2.0)
   tzinfo-data
   web-console
   wirble (~> 0.1.3)
