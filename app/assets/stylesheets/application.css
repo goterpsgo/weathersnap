@@ -12,4 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *
+ * https://nithinbekal.com/posts/yarn-rails/
+ *= require bootstrap/dist/css/bootstrap
  */
