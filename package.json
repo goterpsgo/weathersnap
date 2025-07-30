@@ -31,7 +31,7 @@
     "lint-fix": "prettier --write app/javascript app/assets/javascripts && eslint --ext .ts, .tsx, .js, .jsx app/javascript",
     "pretty": "prettier --check app/javascript app/assets/javascripts"
   },
-  "browserlist": [
+  "browserslist": [
     "defaults"
   ]
 }
