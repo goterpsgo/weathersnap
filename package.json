@@ -7,13 +7,31 @@
   "author": "Joe Tseng <jtsengorg@gmail.com>",
   "license": "GPLv2",
   "dependencies": {
-    "jquery": "^3.7.1"
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^8.0.16",
+    "date-fns": "^4.1.0",
+    "esbuild": "^0.25.8",
+    "eslint": "^9.32.0",
+    "jquery": "^3.7.1",
+    "prettier": "^3.6.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@faker-js/faker": "^9.9.0",
+    "@testing-library/jest-dom": "^6.6.4",
+    "@types/jquery": "^3.5.32",
+    "@types/node": "^24.1.0",
     "webpack": "^5.100.2",
     "webpack-cli": "^6.0.1"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js"
-  }
+    "build": "webpack --config webpack.config.js",
+    "test": "TZ=America/New_York jest",
+    "lint": "eslint --ext .ts, .tsx, .js, .jsx app/javascript",
+    "lint-fix": "prettier --write app/javascript app/assets/javascripts && eslint --ext .ts, .tsx, .js, .jsx app/javascript",
+    "pretty": "prettier --check app/javascript app/assets/javascripts"
+  },
+  "browserlist": [
+    "defaults"
+  ]
 }
