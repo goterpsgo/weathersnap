@@ -1,4 +1,4 @@
-web: bundle exec bin/rails s -p 3000
+web: bundle exec bin/rails s -p $PORT
 js: yarn build --watch
 # css: yarn build:css --watch
 # sidekiq: bundle exec sidekiq  # only if testing sidekiq workers
