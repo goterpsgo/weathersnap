@@ -1,3 +1,6 @@
+require "exifr/jpeg"
+require "date"
+
 class PhotosController < ApplicationController
   before_action :set_photo, only: %i[ show edit update destroy ]
 
@@ -8,6 +11,24 @@ class PhotosController < ApplicationController
 
   # GET /photos/1 or /photos/1.json
   def show
+    image = nil
+
+    @photo.photo_attachment.open do |file|
+      image = EXIFR::JPEG.new(file.path)
+    end
+    
+      
+    lat = image.gps&.latitude
+    long = image.gps&.longitude
+    datestamp = image.date_time_original
+    date = datestamp.strftime("%Y-%m-%d")
+
+    # Print camera model, image width, GPS latitude (if available), and date taken
+    puts "Camera Model: #{image.model}"
+    puts "Image Width: #{image.width}"
+    puts "GPS Latitude: #{image.gps&.latitude}"
+    puts "GPS Longitude: #{image.gps&.longitude}"
+    puts "Date Taken: #{date}"
   end
 
   # GET /photos/new
