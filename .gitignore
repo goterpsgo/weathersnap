@@ -40,3 +40,7 @@
 !/app/assets/builds/.keep
 
 /node_modules
+
+**/*.sqlite3*
+
+.byebug_history

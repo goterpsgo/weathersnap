@@ -35,11 +35,15 @@ gem "image_processing", "~> 1.14"
 # Deploy this application anywhere as a Docker container [https://kamal-deploy.org]
 gem "kamal", ">= 2.5", require: false
 
+gem "activeadmin", "~> 3.3"
 gem "cancancan", "~> 3.6"
 gem "devise", "~> 4.9"
 gem "dotenv", "~> 3.1"
-gem "foreman", "~> 0.88"
+gem "draper", "~> 4.0"
 gem "exifr", "~> 1.4"
+gem "foreman", "~> 0.88"
+gem "pundit", "~> 2.5"
+gem "sassc-rails", "~> 2.1"
 
 group :development, :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
