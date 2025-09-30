@@ -149,7 +149,7 @@ GEM
     erubi (1.13.1)
     execjs (2.10.0)
     exifr (1.4.1)
-    faker (3.5.1)
+    faker (3.5.2)
       i18n (>= 1.8.11, < 2)
     ffi (1.17.2-aarch64-linux-gnu)
     ffi (1.17.2-aarch64-linux-musl)
@@ -497,7 +497,7 @@ DEPENDENCIES
   dotenv (~> 3.1)
   draper (~> 4.0)
   exifr (~> 1.4)
-  faker (~> 3.4)
+  faker (~> 3.5)
   foreman (~> 0.88)
   image_processing (~> 1.14)
   importmap-rails
