@@ -44,6 +44,10 @@ gem "exifr", "~> 1.4"
 gem "foreman", "~> 0.88"
 gem "pundit", "~> 2.5"
 gem "sassc-rails", "~> 2.1"
+gem 'bootstrap-sass', '~> 3.4' # Adjust version as needed
+gem 'sass-rails', '~> 6.0'
+gem 'cssbundling-rails', '~> 1.3'
+gem 'sprockets', '~> 4.2'
 
 group :development, :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
